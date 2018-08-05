@@ -16,7 +16,7 @@ class NextLoginViewController: UIViewController, UITableViewDataSource, UITableV
     // MARK: - VAR
      var TableViewInside: UITableView = UITableView()
     var SlideView : UIView = UIView()
-    var Mark : UIView! =  UIView()
+    var Mark : UIImageView! =  UIImageView()
     var ButtonLeft : UIButton!
     
     @IBOutlet weak var bg_yellow: UIImageView!
@@ -62,9 +62,9 @@ class NextLoginViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func makeMark() {
-        self.Mark = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
-        self.Mark.backgroundColor = UIColor(patternImage: UIImage(named: "bg_yellow.png")!)
-        self.Mark.contentMode = .scaleToFill
+        self.Mark.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height )
+        self.Mark.image = UIImage(named: "bg_yellow")
+        self.Mark.contentMode =  UIViewContentMode.scaleAspectFill
         self.Mark.alpha = 0
         
         //-- create tabGesture
@@ -72,6 +72,8 @@ class NextLoginViewController: UIViewController, UITableViewDataSource, UITableV
         self.Mark.addGestureRecognizer(tap)
         
         self.view.addSubview(self.Mark)
+        
+    
     }
     
    
