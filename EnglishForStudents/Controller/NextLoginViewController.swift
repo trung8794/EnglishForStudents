@@ -38,9 +38,12 @@ class NextLoginViewController: UIViewController, UITableViewDataSource, UITableV
     
     func setupNavigationBarItems(){
        
-        let ButtonLeft : UIButton = UIButton(type: .system)
-        ButtonLeft.setImage(#imageLiteral(resourceName: "ic_menu.png"), for: .normal)
-        ButtonLeft.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        ButtonLeft = UIButton(type: .system)
+        ButtonLeft.setImage(#imageLiteral(resourceName: "ic_menu2.png"), for: .normal)
+        ButtonLeft.adjustsImageSizeForAccessibilityContentSizeCategory = true
+        ButtonLeft.frame = CGRect(x: 0, y: 0, width: 22, height: 22)
+        //        ButtonLeft.backgroundColor = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)
+        ButtonLeft.contentMode = .scaleToFill
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: ButtonLeft)
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
