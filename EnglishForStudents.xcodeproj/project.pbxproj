@@ -15,6 +15,11 @@
 		EB1F1C992116F6020004659B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1F1C972116F6020004659B /* LaunchScreen.storyboard */; };
 		EB1F1CA42116F6020004659B /* EnglishForStudentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F1CA32116F6020004659B /* EnglishForStudentsTests.swift */; };
 		EB1F1CAF2116F6020004659B /* EnglishForStudentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F1CAE2116F6020004659B /* EnglishForStudentsUITests.swift */; };
+		EB1F1CC82116F85F0004659B /* bg_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1F1CC32116F85F0004659B /* bg_yellow.png */; };
+		EB1F1CC92116F85F0004659B /* icons8-twitter-circled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1F1CC42116F85F0004659B /* icons8-twitter-circled-35.png */; };
+		EB1F1CCA2116F85F0004659B /* Vector.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1F1CC52116F85F0004659B /* Vector.png */; };
+		EB1F1CCB2116F85F0004659B /* icons8-facebook-circled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1F1CC62116F85F0004659B /* icons8-facebook-circled-35.png */; };
+		EB1F1CCC2116F85F0004659B /* icons8-google-plus-circled-35.png in Resources */ = {isa = PBXBuildFile; fileRef = EB1F1CC72116F85F0004659B /* icons8-google-plus-circled-35.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		EB1F1CAA2116F6020004659B /* EnglishForStudentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnglishForStudentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1F1CAE2116F6020004659B /* EnglishForStudentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishForStudentsUITests.swift; sourceTree = "<group>"; };
 		EB1F1CB02116F6020004659B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1F1CC32116F85F0004659B /* bg_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_yellow.png; sourceTree = "<group>"; };
+		EB1F1CC42116F85F0004659B /* icons8-twitter-circled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-twitter-circled-35.png"; sourceTree = "<group>"; };
+		EB1F1CC52116F85F0004659B /* Vector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vector.png; sourceTree = "<group>"; };
+		EB1F1CC62116F85F0004659B /* icons8-facebook-circled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-facebook-circled-35.png"; sourceTree = "<group>"; };
+		EB1F1CC72116F85F0004659B /* icons8-google-plus-circled-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-google-plus-circled-35.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,11 @@
 		EB1F1C8A2116F5F90004659B /* EnglishForStudents */ = {
 			isa = PBXGroup;
 			children = (
+				EB1F1CC12116F7F70004659B /* Res */,
+				EB1F1CC02116F7C80004659B /* ExeptionHandle */,
+				EB1F1CBF2116F7BF0004659B /* View */,
+				EB1F1CBE2116F7B50004659B /* Controller */,
+				EB1F1CBC2116F7A00004659B /* Model */,
 				EB1F1C8B2116F5F90004659B /* AppDelegate.swift */,
 				EB1F1C8D2116F5F90004659B /* ViewController.swift */,
 				EB1F1C8F2116F5F90004659B /* Main.storyboard */,
@@ -126,6 +141,54 @@
 				EB1F1CB02116F6020004659B /* Info.plist */,
 			);
 			path = EnglishForStudentsUITests;
+			sourceTree = "<group>";
+		};
+		EB1F1CBC2116F7A00004659B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB1F1CBE2116F7B50004659B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB1F1CBF2116F7BF0004659B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB1F1CC02116F7C80004659B /* ExeptionHandle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExeptionHandle;
+			sourceTree = "<group>";
+		};
+		EB1F1CC12116F7F70004659B /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				EB1F1CC32116F85F0004659B /* bg_yellow.png */,
+				EB1F1CC62116F85F0004659B /* icons8-facebook-circled-35.png */,
+				EB1F1CC72116F85F0004659B /* icons8-google-plus-circled-35.png */,
+				EB1F1CC42116F85F0004659B /* icons8-twitter-circled-35.png */,
+				EB1F1CC52116F85F0004659B /* Vector.png */,
+				EB1F1CC22116F8230004659B /* Images */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		EB1F1CC22116F8230004659B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +295,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1F1CC92116F85F0004659B /* icons8-twitter-circled-35.png in Resources */,
+				EB1F1CCC2116F85F0004659B /* icons8-google-plus-circled-35.png in Resources */,
 				EB1F1C992116F6020004659B /* LaunchScreen.storyboard in Resources */,
+				EB1F1CCA2116F85F0004659B /* Vector.png in Resources */,
+				EB1F1CCB2116F85F0004659B /* icons8-facebook-circled-35.png in Resources */,
 				EB1F1C962116F6020004659B /* Assets.xcassets in Resources */,
 				EB1F1C912116F5F90004659B /* Main.storyboard in Resources */,
+				EB1F1CC82116F85F0004659B /* bg_yellow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
