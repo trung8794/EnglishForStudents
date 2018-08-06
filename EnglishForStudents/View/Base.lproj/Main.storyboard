@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,7 +39,7 @@
                                         <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zYC-Pc-aNa">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zYC-Pc-aNa">
                                         <rect key="frame" x="25" y="62" width="255" height="30"/>
                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -50,7 +49,7 @@
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                                     </textField>
-                                    <textField opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHv-Wy-Gpw">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHv-Wy-Gpw">
                                         <rect key="frame" x="25" y="102" width="255" height="30"/>
                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -232,35 +231,34 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ULZ-CA-QuG">
                                 <rect key="frame" x="0.5" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Spf-eQ-2u2">
-                                <rect key="frame" x="40" y="114" width="295" height="166.5"/>
-                                <color key="backgroundColor" red="0.40917578668287258" green="0.83743780850000005" blue="0.58519389403646871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Spf-eQ-2u2">
+                                <rect key="frame" x="0.0" y="114" width="375" height="212.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Spf-eQ-2u2" secondAttribute="height" multiplier="23:13" id="rPq-Em-Q1b"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkS-kC-eed">
-                                <rect key="frame" x="138" y="577" width="100" height="40"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.18894477739726026" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="138" y="572" width="100" height="45"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.2755779109589041" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="V9Y-Eo-kt0"/>
-                                    <constraint firstAttribute="height" constant="40" id="Wmt-cu-enC"/>
+                                    <constraint firstAttribute="height" constant="45" id="Wmt-cu-enC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="27"/>
                                 <state key="normal" title="Go !">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="WuF-Qb-hDU">
-                                <rect key="frame" x="50" y="327.5" width="275" height="229.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="WuF-Qb-hDU">
+                                <rect key="frame" x="50" y="373.5" width="275" height="178.5"/>
                                 <color key="backgroundColor" red="1" green="0.88810642852765009" blue="0.88463165216166106" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="93P-Yu-J4a">
-                                <rect key="frame" x="168" y="280.5" width="39" height="37"/>
+                                <rect key="frame" x="168" y="326.5" width="39" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="58W-x4-FpD"/>
                                 </constraints>
@@ -271,10 +269,10 @@
                             <constraint firstItem="ULZ-CA-QuG" firstAttribute="height" secondItem="2Z4-3N-Vdg" secondAttribute="height" id="0VD-gs-TKP"/>
                             <constraint firstItem="93P-Yu-J4a" firstAttribute="centerX" secondItem="Spf-eQ-2u2" secondAttribute="centerX" id="8hc-nQ-Cqq"/>
                             <constraint firstItem="WuF-Qb-hDU" firstAttribute="centerX" secondItem="ULZ-CA-QuG" secondAttribute="centerX" id="Cma-Ug-GaK"/>
-                            <constraint firstAttribute="trailing" secondItem="Spf-eQ-2u2" secondAttribute="trailing" constant="40" id="E6w-tI-UbF"/>
+                            <constraint firstAttribute="trailing" secondItem="Spf-eQ-2u2" secondAttribute="trailing" id="E6w-tI-UbF"/>
                             <constraint firstItem="WuF-Qb-hDU" firstAttribute="leading" secondItem="2Z4-3N-Vdg" secondAttribute="leading" constant="50" id="H4X-Qi-F7T"/>
                             <constraint firstItem="jkS-kC-eed" firstAttribute="centerX" secondItem="ULZ-CA-QuG" secondAttribute="centerX" id="HQD-A9-apP"/>
-                            <constraint firstItem="Spf-eQ-2u2" firstAttribute="leading" secondItem="2Z4-3N-Vdg" secondAttribute="leading" constant="40" id="Ihm-6x-OdU"/>
+                            <constraint firstItem="Spf-eQ-2u2" firstAttribute="leading" secondItem="2Z4-3N-Vdg" secondAttribute="leading" id="Ihm-6x-OdU"/>
                             <constraint firstItem="ULZ-CA-QuG" firstAttribute="width" secondItem="2Z4-3N-Vdg" secondAttribute="width" id="JIR-8d-Wrv"/>
                             <constraint firstItem="ULZ-CA-QuG" firstAttribute="centerX" secondItem="2Z4-3N-Vdg" secondAttribute="centerX" id="R45-O2-rXC"/>
                             <constraint firstItem="ULZ-CA-QuG" firstAttribute="centerY" secondItem="2Z4-3N-Vdg" secondAttribute="centerY" id="R4V-Qg-DdQ"/>
@@ -289,6 +287,10 @@
                     <navigationItem key="navigationItem" id="DQq-Xt-zbz"/>
                     <connections>
                         <outlet property="bg_yellow" destination="ULZ-CA-QuG" id="s7D-8o-JAT"/>
+                        <outlet property="btnGo" destination="jkS-kC-eed" id="0JP-Uo-h6d"/>
+                        <outlet property="mySliderFeature" destination="Spf-eQ-2u2" id="XsH-qc-tyi"/>
+                        <outlet property="mySliderTab" destination="93P-Yu-J4a" id="75Y-Ek-pqx"/>
+                        <outlet property="txtShowDetail" destination="WuF-Qb-hDU" id="7tF-vT-AGl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PDd-7q-POi" userLabel="First Responder" sceneMemberID="firstResponder"/>
