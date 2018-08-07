@@ -28,6 +28,11 @@
 		EB44135521171A360011ABF3 /* NextLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB44135421171A360011ABF3 /* NextLoginViewController.swift */; };
 		EB4413582117292B0011ABF3 /* cellTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4413572117292B0011ABF3 /* cellTableView.swift */; };
 		EB44135C211748280011ABF3 /* ic_menu2.png in Resources */ = {isa = PBXBuildFile; fileRef = EB44135B211748280011ABF3 /* ic_menu2.png */; };
+		EB450D1C211A113C004C1861 /* Linotte Semi Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB450D1A211A10F6004C1861 /* Linotte Semi Bold.otf */; };
+		EB450D1D211A1140004C1861 /* Linotte Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB450D1B211A10F6004C1861 /* Linotte Regular.otf */; };
+		EB450D1E211A1145004C1861 /* Linotte Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB450D17211A10F5004C1861 /* Linotte Bold.otf */; };
+		EB7393FE211A27D9001EEB84 /* SliderSubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7393FD211A27D9001EEB84 /* SliderSubView.xib */; };
+		EB739400211A27EF001EEB84 /* SliderSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7393FF211A27EF001EEB84 /* SliderSubView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +80,13 @@
 		EB44135421171A360011ABF3 /* NextLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLoginViewController.swift; sourceTree = "<group>"; };
 		EB4413572117292B0011ABF3 /* cellTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellTableView.swift; sourceTree = "<group>"; };
 		EB44135B211748280011ABF3 /* ic_menu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_menu2.png; sourceTree = "<group>"; };
+		EB450D17211A10F5004C1861 /* Linotte Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Linotte Bold.otf"; sourceTree = "<group>"; };
+		EB450D18211A10F5004C1861 /* Linotte Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Linotte Heavy.otf"; sourceTree = "<group>"; };
+		EB450D19211A10F6004C1861 /* Linotte Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Linotte Light.otf"; sourceTree = "<group>"; };
+		EB450D1A211A10F6004C1861 /* Linotte Semi Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Linotte Semi Bold.otf"; sourceTree = "<group>"; };
+		EB450D1B211A10F6004C1861 /* Linotte Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Linotte Regular.otf"; sourceTree = "<group>"; };
+		EB7393FD211A27D9001EEB84 /* SliderSubView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderSubView.xib; sourceTree = "<group>"; };
+		EB7393FF211A27EF001EEB84 /* SliderSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSubView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +137,7 @@
 		EB1F1C8A2116F5F90004659B /* EnglishForStudents */ = {
 			isa = PBXGroup;
 			children = (
+				EB450D16211A1043004C1861 /* Fonts */,
 				EB1F1CC12116F7F70004659B /* Res */,
 				EB1F1CC02116F7C80004659B /* ExeptionHandle */,
 				EB1F1CBF2116F7BF0004659B /* View */,
@@ -178,6 +191,7 @@
 		EB1F1CBF2116F7BF0004659B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EB450D11211A0EC1004C1861 /* Elements */,
 				EB1F1C8F2116F5F90004659B /* Main.storyboard */,
 				EB44134F211706710011ABF3 /* CustomUIView.swift */,
 			);
@@ -230,6 +244,27 @@
 				EB4413572117292B0011ABF3 /* cellTableView.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		EB450D11211A0EC1004C1861 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				EB7393FD211A27D9001EEB84 /* SliderSubView.xib */,
+				EB7393FF211A27EF001EEB84 /* SliderSubView.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		EB450D16211A1043004C1861 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EB450D17211A10F5004C1861 /* Linotte Bold.otf */,
+				EB450D18211A10F5004C1861 /* Linotte Heavy.otf */,
+				EB450D19211A10F6004C1861 /* Linotte Light.otf */,
+				EB450D1B211A10F6004C1861 /* Linotte Regular.otf */,
+				EB450D1A211A10F6004C1861 /* Linotte Semi Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,12 +377,16 @@
 				EB1F1CC92116F85F0004659B /* ic_twitter_35.png in Resources */,
 				EB1F1CCC2116F85F0004659B /* ic_google_35.png in Resources */,
 				EB1F1C992116F6020004659B /* LaunchScreen.storyboard in Resources */,
+				EB450D1E211A1145004C1861 /* Linotte Bold.otf in Resources */,
 				EB1F1CCA2116F85F0004659B /* ic_menu.png in Resources */,
 				EB1F1CCB2116F85F0004659B /* ic_fb_35.png in Resources */,
 				EB1F1C962116F6020004659B /* Assets.xcassets in Resources */,
+				EB7393FE211A27D9001EEB84 /* SliderSubView.xib in Resources */,
 				EB44135C211748280011ABF3 /* ic_menu2.png in Resources */,
 				EB1F1C912116F5F90004659B /* Main.storyboard in Resources */,
+				EB450D1C211A113C004C1861 /* Linotte Semi Bold.otf in Resources */,
 				EB1F1CC82116F85F0004659B /* bg_yellow.png in Resources */,
+				EB450D1D211A1140004C1861 /* Linotte Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +417,7 @@
 				EB441353211717CF0011ABF3 /* AppUtility.swift in Sources */,
 				EB1F1C8E2116F5F90004659B /* ViewController.swift in Sources */,
 				EB1F1C8C2116F5F90004659B /* AppDelegate.swift in Sources */,
+				EB739400211A27EF001EEB84 /* SliderSubView.swift in Sources */,
 				EB4413582117292B0011ABF3 /* cellTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

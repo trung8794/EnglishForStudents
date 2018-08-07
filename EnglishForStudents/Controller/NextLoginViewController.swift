@@ -20,7 +20,7 @@ class NextLoginViewController: UIViewController, UITableViewDataSource, UITableV
     // MARK: - Let
     // MARK: - VAR
     //----------
-    var pageCount : Int = 5
+    var pageCount : Int = 7
     var myFrame : CGRect = CGRect(x: 0, y: 0, width: 0, height: 0)
     var myTextList : [String] = ["Some detail of Grade 1",
                                  "Some detail of Grade 2",
@@ -39,6 +39,7 @@ class NextLoginViewController: UIViewController, UITableViewDataSource, UITableV
     //----
     var listParentViewInsideScroll = Array<UIView>()
     var listSubViewInsideScroll = Array<UIView>()
+    var listNumberInside = Array<UIView>()
     var widthIndex : CGFloat = 0
     var heightIndex : CGFloat = 0
     var widthOthers : CGFloat = 0
@@ -55,6 +56,7 @@ class NextLoginViewController: UIViewController, UITableViewDataSource, UITableV
     }
     override func viewDidAppear(_ animated: Bool) {
         createSliderFeature()
+    
     }
     // MARK: - Action
     // MARK: - Function common
@@ -80,11 +82,13 @@ class NextLoginViewController: UIViewController, UITableViewDataSource, UITableV
             listParentViewInsideScroll[index].anchorSizeWidth(width: mySliderFeature.frame.width)
             listParentViewInsideScroll[index].anchorToView(top: mySliderFeature.topAnchor, leading: mySliderFeature.leadingAnchor, bottom: nil, trailing: nil, padding: UIEdgeInsets(top: 0, left: mySliderFeature.frame.width * CGFloat(index), bottom: 0, right: 0))
             
+            
+            
             let subView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
             subView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             subView.layer.cornerRadius = 10
             subView.clipsToBounds = true
-            subView.alpha = 0.8
+            subView.alpha = 0.9
             listSubViewInsideScroll.append(subView)
             listParentViewInsideScroll[index].addSubview(listSubViewInsideScroll[index])
             if(index == 0){
@@ -94,9 +98,13 @@ class NextLoginViewController: UIViewController, UITableViewDataSource, UITableV
                  listSubViewInsideScroll[index].anchorToView(top: listParentViewInsideScroll[index].topAnchor, leading: listParentViewInsideScroll[index].leadingAnchor, bottom: listParentViewInsideScroll[index].bottomAnchor, trailing: listParentViewInsideScroll[index].trailingAnchor, padding: UIEdgeInsets(top: 30, left: -30, bottom: 30, right: -30))
             }
             listSubViewInsideScroll[index].anchorCenter(to: listParentViewInsideScroll[index], centerX: true, centerY: true)
-          
-            let numberView = UIView(frame: CGRect(x: 0, y: 0, width: 110, height: 110))
+            let numberView = SliderSubView(frame: CGRect(x: (widthIndex - CGFloat(120)) / 2, y: (heightIndex - CGFloat(170)) / 2, width: 120 , height: 190))
+            numberView.lblNumber.text = String(index + 6)
+            subView.addSubview(numberView)
+
+           listNumberInside.append(numberView)
             
+      
             //-- action Tap ---
             let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
             listSubViewInsideScroll[index].addGestureRecognizer(tap)
@@ -118,7 +126,7 @@ class NextLoginViewController: UIViewController, UITableViewDataSource, UITableV
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        var index = Int(scrollView.contentOffset.x / self.mySliderFeature.frame.width)
+        let index = Int(scrollView.contentOffset.x / self.mySliderFeature.frame.width)
         mySliderTab.currentPage = index
         
         let contentX = scrollView.contentOffset.x
@@ -198,13 +206,33 @@ class NextLoginViewController: UIViewController, UITableViewDataSource, UITableV
             }
         }
     }
+    let MainSlider = UIView()
     func makeSlideOutSide() {
-        SlideView = UIView(frame: CGRect(x: -self.view.frame.width * 2 / 3, y: (navigationController?.navigationBar.frame.height)! * 1.5, width: self.view.frame.width * 2 / 3, height: self.view.frame.height - (navigationController?.navigationBar.frame.height)! * 1.5))
-        SlideView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        SlideView.customBorderRadius(rad: 5.0)
+        SlideView = UIView(frame: CGRect(x: -self.view.frame.width, y: (navigationController?.navigationBar.frame.height)! * 1.5, width: self.view.frame.width, height: self.view.frame.height - (navigationController?.navigationBar.frame.height)! * 1.5))
         navigationController?.view.addSubview(SlideView)
+        MainSlider.frame = CGRect(x: 0, y: 0, width: 250, height: SlideView.frame.height)
+        MainSlider.layer.cornerRadius = 5
+        MainSlider.backgroundColor  = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+        SlideView.addSubview(MainSlider)
         
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeLeft.direction = .left
+        swipeLeft.numberOfTouchesRequired = 1
+        SlideView.addGestureRecognizer(swipeLeft)
     }
+    
+    @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
+        if gesture.direction == UISwipeGestureRecognizerDirection.left {
+            if(self.SlideView.frame.origin.x >= 0){
+                UIView.animate(withDuration: 0.7) {
+                    self.SlideView.frame.origin.x -= self.SlideView.frame.width
+                    self.Mark.alpha = 0
+                }
+            }
+        }
+
+    }
+    
     func makeTableViewInside() {
         TableViewInside = UITableView(frame: CGRect(x: 0, y: 10, width:   self.SlideView.frame.width - 20, height: self.SlideView.frame.height - 20))
         TableViewInside.dataSource = self
