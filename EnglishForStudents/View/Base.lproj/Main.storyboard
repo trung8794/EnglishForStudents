@@ -60,7 +60,7 @@
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD2-pk-sfW">
-                                        <rect key="frame" x="89.5" y="142" width="127.5" height="40"/>
+                                        <rect key="frame" x="89" y="142" width="127.5" height="40"/>
                                         <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="n1L-iR-VEC"/>
@@ -104,7 +104,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yi8-CK-dj4">
-                                <rect key="frame" x="115" y="474.5" width="35" height="35"/>
+                                <rect key="frame" x="114.5" y="474.5" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Gzi-AV-Ue0"/>
                                     <constraint firstAttribute="width" constant="35" id="kGP-5A-lg6"/>
@@ -112,7 +112,7 @@
                                 <state key="normal" image="ic_fb_35.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5r-ge-838">
-                                <rect key="frame" x="170" y="474.5" width="35" height="35"/>
+                                <rect key="frame" x="169.5" y="474.5" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="PdT-Xs-cD5"/>
                                     <constraint firstAttribute="height" constant="35" id="REI-Ux-I6N"/>
@@ -120,7 +120,7 @@
                                 <state key="normal" image="ic_google_35.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zb-QD-h9N">
-                                <rect key="frame" x="225" y="474.5" width="35" height="35"/>
+                                <rect key="frame" x="224.5" y="474.5" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="dfu-Ia-W5x"/>
                                     <constraint firstAttribute="width" constant="35" id="izu-8a-Sae"/>
@@ -128,7 +128,7 @@
                                 <state key="normal" image="ic_twitter_35.png"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Sign in with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTH-cM-VM9">
-                                <rect key="frame" x="146" y="448.5" width="83.5" height="21"/>
+                                <rect key="frame" x="145.5" y="448.5" width="83.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="dbw-C3-AeP"/>
                                 </constraints>
@@ -137,14 +137,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4e6-yY-5eG">
-                                <rect key="frame" x="239.5" y="458.5" width="75.5" height="1"/>
+                                <rect key="frame" x="239" y="458.5" width="76" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="ccv-Ii-GVK"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDs-FZ-8U2">
-                                <rect key="frame" x="60" y="458.5" width="76" height="1"/>
+                                <rect key="frame" x="60" y="458.5" width="75.5" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="NOV-CJ-gkq"/>
@@ -232,9 +232,9 @@
                                 <rect key="frame" x="0.5" y="0.0" width="375" height="667"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Spf-eQ-2u2">
-                                <rect key="frame" x="0.0" y="114" width="375" height="212.5"/>
+                                <rect key="frame" x="0.0" y="114" width="375" height="195.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Spf-eQ-2u2" secondAttribute="height" multiplier="23:13" id="rPq-Em-Q1b"/>
+                                    <constraint firstAttribute="width" secondItem="Spf-eQ-2u2" secondAttribute="height" multiplier="25:13" id="jBL-6L-OfO"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkS-kC-eed">
@@ -250,7 +250,7 @@
                                 </state>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="WuF-Qb-hDU">
-                                <rect key="frame" x="50" y="373.5" width="275" height="178.5"/>
+                                <rect key="frame" x="50" y="356.5" width="275" height="195.5"/>
                                 <color key="backgroundColor" red="1" green="0.88810642852765009" blue="0.88463165216166106" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -258,7 +258,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="93P-Yu-J4a">
-                                <rect key="frame" x="168" y="326.5" width="39" height="37"/>
+                                <rect key="frame" x="168" y="309.5" width="39" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="58W-x4-FpD"/>
                                 </constraints>
