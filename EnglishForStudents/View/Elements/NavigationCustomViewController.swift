@@ -41,7 +41,7 @@ class NavigationCustomViewController: UIViewController {
         print("da cham vao User")
     }
     @objc func pressButtonShowtext(){
-        print("da cham vao Text Show")
+       
     }
     
     // MARK: - Function common
@@ -54,7 +54,7 @@ class NavigationCustomViewController: UIViewController {
     // MARK: - prepare + delegate
     func buildUINavigation() {
         self.view.addSubview(viewNavigation)
-        viewNavigation.anchorSizeHeight(height: Variables.PADDING_TOP)
+        viewNavigation.anchorSizeHeight(height: PADDING_TOP)
         viewNavigation.anchorToView(top: self.view.safeAreaLayoutGuide.topAnchor, leading: self.view.leadingAnchor, bottom: nil, trailing: self.view.trailingAnchor, padding: UIEdgeInsets.zero)
         
         btnLeftMenu.setImage(UIImage(named: "ic_menu2"), for: .normal)
@@ -77,11 +77,13 @@ class NavigationCustomViewController: UIViewController {
         btnUser.layer.cornerRadius = 20
         btnUser.clipsToBounds = true
         
-        btnTopbarShowText.setTitle(Variables.TEXT_TOP_BAR, for: .normal)
-        btnTopbarShowText.titleLabel?.font = Variables.FONT_TEXT_20
+        btnTopbarShowText.setTitle("Nguyen Van Trung", for: .normal)
+        btnTopbarShowText.titleLabel?.font = FONT_TEXT_20
         btnTopbarShowText.titleLabel?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        btnTopbarShowText.titleLabel?.textAlignment = .right
+        
         viewNavigation.addSubview(btnTopbarShowText)
-        btnTopbarShowText.backgroundColor = #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)
+        
         btnTopbarShowText.anchorToView(top: nil, leading: nil, bottom: nil, trailing: btnUser.leadingAnchor, padding: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 5))
         btnTopbarShowText.anchorCenter(to: viewNavigation, centerX: false, centerY: true)
         
@@ -92,11 +94,11 @@ class NavigationCustomViewController: UIViewController {
 
     func buidSlideMenu() {
        
-        sliderMenu.frame = CGRect(x: -self.view.frame.width, y: Variables.PADDING_TOP * 1.3, width: self.view.frame.width, height: self.view.frame.height - Variables.PADDING_TOP * 1.3)
+        sliderMenu.frame = CGRect(x: -self.view.frame.width, y: PADDING_TOP * 1.3, width: self.view.frame.width, height: self.view.frame.height - PADDING_TOP * 1.3)
         view.addSubview(sliderMenu)
         
         subSliderMenu.backgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
-        subSliderMenu.frame = CGRect(x: 0, y: 0, width: Variables.WIDTH_SLIDE_MENU, height: sliderMenu.frame.height)
+        subSliderMenu.frame = CGRect(x: 0, y: 0, width: WIDTH_SLIDE_MENU, height: sliderMenu.frame.height)
         subSliderMenu.customBorderRadius(rad: 10)
         sliderMenu.addSubview(subSliderMenu)
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))

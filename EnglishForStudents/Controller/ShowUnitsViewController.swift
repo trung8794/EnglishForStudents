@@ -13,11 +13,13 @@ class ShowUnitsViewController: NavigationCustomViewController{
    
     @IBOutlet weak var bg_image: UIImageView!
     @IBOutlet weak var lblNumber: UILabel!
+    var topString = ""
+    
     var gradeNumber = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        bg_image.image = UIImage(named: Variables.NAME_BG)
-       btnTopbarShowText.titleLabel?.text = "<< GRADE " + gradeNumber
+        bg_image.image = UIImage(named: NAME_BG)
+        btnTopbarShowText.titleLabel?.font = FONT_TEXT_27
         lblNumber.text = gradeNumber
     }
 
@@ -28,6 +30,8 @@ class ShowUnitsViewController: NavigationCustomViewController{
     
 
     override func viewDidAppear(_ animated: Bool) {
+
+        btnTopbarShowText.setTitle("<< GRADE " + gradeNumber, for: .normal)
         
     }
 }

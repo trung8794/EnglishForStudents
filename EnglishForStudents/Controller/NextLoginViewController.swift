@@ -121,17 +121,17 @@ class NextLoginViewController: NavigationCustomViewController, UIScrollViewDeleg
         let tile = contentX / widthX
         if(tile == CGFloat(index)){
             gradeNumber = index + 6
-            if( index > 3 && Variables.NAME_BG  == Variables.NAME_BG_LIST[0]){
-                Variables.NAME_BG = Variables.NAME_BG_LIST[1]
+            if( index > 3 && NAME_BG  == NAME_BG_LIST[0]){
+                NAME_BG = NAME_BG_LIST[1]
                 UIView.animate(withDuration: 0.5) {
-                    self.BG_View.image = UIImage(named: Variables.NAME_BG)
+                    self.BG_View.image = UIImage(named: NAME_BG)
                 }
                 
             }
-            if( index <= 3 && Variables.NAME_BG  == Variables.NAME_BG_LIST[1]){
-                Variables.NAME_BG = Variables.NAME_BG_LIST[0]
+            if( index <= 3 && NAME_BG  == NAME_BG_LIST[1]){
+                NAME_BG = NAME_BG_LIST[0]
                 UIView.animate(withDuration: 0.5) {
-                    self.BG_View.image = UIImage(named: Variables.NAME_BG)
+                    self.BG_View.image = UIImage(named: NAME_BG)
                 }
                 
             }
