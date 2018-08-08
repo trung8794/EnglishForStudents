@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Linotte Regular.otf">
+            <string>Linotte-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowUnitsViewController" customModule="EnglishForStudents" customModuleProvider="target">
+            <connections>
+                <outlet property="bg_image" destination="M5g-R9-njf" id="6Jb-Di-cH4"/>
+                <outlet property="lblNumber" destination="Atn-u5-tmn" id="SM6-pi-JKN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="M5g-R9-njf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atn-u5-tmn">
+                    <rect key="frame" x="140" y="325" width="94" height="17"/>
+                    <fontDescription key="fontDescription" name="Linotte-Regular" family="Linotte-Regular" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="M5g-R9-njf" secondAttribute="bottom" id="an3-FT-wvY"/>
+                <constraint firstItem="Atn-u5-tmn" firstAttribute="centerY" secondItem="M5g-R9-njf" secondAttribute="centerY" id="f5k-Oq-iSr"/>
+                <constraint firstAttribute="trailing" secondItem="M5g-R9-njf" secondAttribute="trailing" id="kHQ-4U-EeZ"/>
+                <constraint firstItem="M5g-R9-njf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pS1-oh-hza"/>
+                <constraint firstItem="M5g-R9-njf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="x5o-Gr-GMM"/>
+                <constraint firstItem="Atn-u5-tmn" firstAttribute="centerX" secondItem="M5g-R9-njf" secondAttribute="centerX" id="zk8-cI-XOQ"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_yellow.png" width="360" height="640"/>
+    </resources>
+</document>

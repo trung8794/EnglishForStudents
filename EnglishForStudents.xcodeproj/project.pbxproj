@@ -33,6 +33,14 @@
 		EB450D1E211A1145004C1861 /* Linotte Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB450D17211A10F5004C1861 /* Linotte Bold.otf */; };
 		EB7393FE211A27D9001EEB84 /* SliderSubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7393FD211A27D9001EEB84 /* SliderSubView.xib */; };
 		EB739400211A27EF001EEB84 /* SliderSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7393FF211A27EF001EEB84 /* SliderSubView.swift */; };
+		EBA067A8211A8B8B00DECEC7 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA067A7211A8B8B00DECEC7 /* Variables.swift */; };
+		EBA067AA211A8C4200DECEC7 /* bg_green.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA067A9211A8C4200DECEC7 /* bg_green.png */; };
+		EBA067AD211A932B00DECEC7 /* ShowUnitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA067AB211A932B00DECEC7 /* ShowUnitsViewController.swift */; };
+		EBA067AE211A932B00DECEC7 /* ShowUnitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA067AC211A932B00DECEC7 /* ShowUnitsViewController.xib */; };
+		EBA067B1211AA32500DECEC7 /* NavigationCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA067AF211AA32500DECEC7 /* NavigationCustomViewController.swift */; };
+		EBA067B2211AA32500DECEC7 /* NavigationCustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA067B0211AA32500DECEC7 /* NavigationCustomViewController.xib */; };
+		EBC95D9C211AD9A700AECE23 /* ic_girl.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC95D9A211AD9A700AECE23 /* ic_girl.png */; };
+		EBC95D9D211AD9A700AECE23 /* ic_boy.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC95D9B211AD9A700AECE23 /* ic_boy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +95,14 @@
 		EB450D1B211A10F6004C1861 /* Linotte Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Linotte Regular.otf"; sourceTree = "<group>"; };
 		EB7393FD211A27D9001EEB84 /* SliderSubView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderSubView.xib; sourceTree = "<group>"; };
 		EB7393FF211A27EF001EEB84 /* SliderSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSubView.swift; sourceTree = "<group>"; };
+		EBA067A7211A8B8B00DECEC7 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		EBA067A9211A8C4200DECEC7 /* bg_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_green.png; sourceTree = "<group>"; };
+		EBA067AB211A932B00DECEC7 /* ShowUnitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowUnitsViewController.swift; sourceTree = "<group>"; };
+		EBA067AC211A932B00DECEC7 /* ShowUnitsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowUnitsViewController.xib; sourceTree = "<group>"; };
+		EBA067AF211AA32500DECEC7 /* NavigationCustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCustomViewController.swift; sourceTree = "<group>"; };
+		EBA067B0211AA32500DECEC7 /* NavigationCustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationCustomViewController.xib; sourceTree = "<group>"; };
+		EBC95D9A211AD9A700AECE23 /* ic_girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_girl.png; sourceTree = "<group>"; };
+		EBC95D9B211AD9A700AECE23 /* ic_boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_boy.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +191,7 @@
 			children = (
 				EB441356211729100011ABF3 /* Classes */,
 				EB441351211717540011ABF3 /* Structs */,
+				EBA067A7211A8B8B00DECEC7 /* Variables.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +199,7 @@
 		EB1F1CBE2116F7B50004659B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EBA067AB211A932B00DECEC7 /* ShowUnitsViewController.swift */,
 				EB1F1C8D2116F5F90004659B /* ViewController.swift */,
 				EB44135421171A360011ABF3 /* NextLoginViewController.swift */,
 			);
@@ -194,6 +212,7 @@
 				EB450D11211A0EC1004C1861 /* Elements */,
 				EB1F1C8F2116F5F90004659B /* Main.storyboard */,
 				EB44134F211706710011ABF3 /* CustomUIView.swift */,
+				EBA067AC211A932B00DECEC7 /* ShowUnitsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -216,6 +235,9 @@
 		EB1F1CC22116F8230004659B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EBC95D9B211AD9A700AECE23 /* ic_boy.png */,
+				EBC95D9A211AD9A700AECE23 /* ic_girl.png */,
+				EBA067A9211A8C4200DECEC7 /* bg_green.png */,
 				EB37791E2117E88500A339EE /* img1.jpg */,
 				EB37791C2117E88400A339EE /* img2.jpeg */,
 				EB37791D2117E88400A339EE /* img3.jpeg */,
@@ -251,6 +273,8 @@
 			children = (
 				EB7393FD211A27D9001EEB84 /* SliderSubView.xib */,
 				EB7393FF211A27EF001EEB84 /* SliderSubView.swift */,
+				EBA067AF211AA32500DECEC7 /* NavigationCustomViewController.swift */,
+				EBA067B0211AA32500DECEC7 /* NavigationCustomViewController.xib */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -372,9 +396,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB37791F2117E88500A339EE /* img2.jpeg in Resources */,
+				EBC95D9C211AD9A700AECE23 /* ic_girl.png in Resources */,
 				EB3779212117E88500A339EE /* img1.jpg in Resources */,
 				EB3779202117E88500A339EE /* img3.jpeg in Resources */,
+				EBA067AA211A8C4200DECEC7 /* bg_green.png in Resources */,
 				EB1F1CC92116F85F0004659B /* ic_twitter_35.png in Resources */,
+				EBA067B2211AA32500DECEC7 /* NavigationCustomViewController.xib in Resources */,
 				EB1F1CCC2116F85F0004659B /* ic_google_35.png in Resources */,
 				EB1F1C992116F6020004659B /* LaunchScreen.storyboard in Resources */,
 				EB450D1E211A1145004C1861 /* Linotte Bold.otf in Resources */,
@@ -386,7 +413,9 @@
 				EB1F1C912116F5F90004659B /* Main.storyboard in Resources */,
 				EB450D1C211A113C004C1861 /* Linotte Semi Bold.otf in Resources */,
 				EB1F1CC82116F85F0004659B /* bg_yellow.png in Resources */,
+				EBC95D9D211AD9A700AECE23 /* ic_boy.png in Resources */,
 				EB450D1D211A1140004C1861 /* Linotte Regular.otf in Resources */,
+				EBA067AE211A932B00DECEC7 /* ShowUnitsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,8 +441,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB1F1C942116F5F90004659B /* EnglishForStudents.xcdatamodeld in Sources */,
+				EBA067B1211AA32500DECEC7 /* NavigationCustomViewController.swift in Sources */,
 				EB44135521171A360011ABF3 /* NextLoginViewController.swift in Sources */,
 				EB441350211706710011ABF3 /* CustomUIView.swift in Sources */,
+				EBA067AD211A932B00DECEC7 /* ShowUnitsViewController.swift in Sources */,
+				EBA067A8211A8B8B00DECEC7 /* Variables.swift in Sources */,
 				EB441353211717CF0011ABF3 /* AppUtility.swift in Sources */,
 				EB1F1C8E2116F5F90004659B /* ViewController.swift in Sources */,
 				EB1F1C8C2116F5F90004659B /* AppDelegate.swift in Sources */,
