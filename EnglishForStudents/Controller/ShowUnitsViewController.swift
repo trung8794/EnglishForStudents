@@ -16,9 +16,14 @@ class ShowUnitsViewController: NavigationCustomViewController, UITableViewDataSo
    
     @IBOutlet weak var MyTableView: UITableView!
     @IBOutlet weak var bg_image: UIImageView!
+     @IBOutlet weak var myBlurView: UIVisualEffectView!
     var topString = ""
     
     var gradeNumber = 0
+    
+    var effect : UIVisualEffect!
+    var effectState = 0
+    var addItemView  = BlurViewShow(frame: CGRect(x: 0, y: 0, width: 300, height: 380))
     override func viewDidLoad() {
         super.viewDidLoad()
         bg_image.image = UIImage(named: NAME_BG)
@@ -29,8 +34,15 @@ class ShowUnitsViewController: NavigationCustomViewController, UITableViewDataSo
         MyTableView.backgroundColor = UIColor.clear
         MyTableView.showsHorizontalScrollIndicator = false
         MyTableView.showsVerticalScrollIndicator = false
+        
+        //--Load blur View--
+        effect = myBlurView.effect
+        myBlurView.effect = nil
+        addItemView.customBorderRadius(rad: 10)
+        btnLeftMenu.addTarget(self, action:#selector(hideBlur), for: .touchUpInside)
     }
-
+   
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
        
@@ -48,10 +60,15 @@ class ShowUnitsViewController: NavigationCustomViewController, UITableViewDataSo
     //        // #warning Incomplete implementation, return the number of sections
     //        return 1
     //    }
+    
     //
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 13
+        if(gradeNumber <= 9){
+            return 12
+        }
+        else{
+            return 10
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,6 +79,10 @@ class ShowUnitsViewController: NavigationCustomViewController, UITableViewDataSo
         cell.selectedBackgroundView = backgroundView
         cell.backgroundColor = UIColor.clear;
         cell.lblNumber.text = String(indexPath.row + 1)
+        
+        //-- Build Each cell
+        cell.lblToppicName.text = TOPIC_DRADES[gradeNumber - 6][indexPath.row + 1]
+        
         if(indexPath.row < 4){
             
             cell.lblNumCompleted.text = "3/5 Completed"
@@ -72,8 +93,50 @@ class ShowUnitsViewController: NavigationCustomViewController, UITableViewDataSo
         
         return cell
     }
+
+    //-- Blur Funcion--
+    func animateIn()  {
+        self.view.addSubview(addItemView)
+        addItemView.center = self.view.center
+        addItemView.transform = CGAffineTransform.init(scaleX: 1.2, y: 1.2)
+        addItemView.alpha = 0
+        myBlurView.alpha = 1
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.touchOnBlur))
+        myBlurView.addGestureRecognizer(gesture)
+        
+        UIView.animate(withDuration: 0.3) {
+            self.myBlurView.effect = self.effect
+            self.addItemView.alpha = 1
+            self.addItemView.transform = CGAffineTransform.identity
+            
+        }
+        effectState = 1
+    }
     
+    @objc func touchOnBlur(sender : UITapGestureRecognizer) {
+        animateOut()
+    }
+
+    func animateOut() {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.addItemView.transform = CGAffineTransform.init(scaleX: 1.2, y: 1.2)
+            self.addItemView.alpha = 0
+            self.myBlurView.effect = nil
+            self.myBlurView.alpha = 0
+        }) { (success : Bool) in
+            self.addItemView.removeFromSuperview()
+            self.effectState = 0
+        }
+    }
+    
+    @objc func hideBlur(){
+//        showHideMenuLeft()
+        if(effectState == 1){
+            animateOut()
+        }
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        animateIn()
         print(indexPath.row)
     }
     

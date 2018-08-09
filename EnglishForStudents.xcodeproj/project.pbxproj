@@ -33,6 +33,8 @@
 		EB450D1C211A113C004C1861 /* Linotte Semi Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB450D1A211A10F6004C1861 /* Linotte Semi Bold.otf */; };
 		EB450D1D211A1140004C1861 /* Linotte Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB450D1B211A10F6004C1861 /* Linotte Regular.otf */; };
 		EB450D1E211A1145004C1861 /* Linotte Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB450D17211A10F5004C1861 /* Linotte Bold.otf */; };
+		EB575C0C211C3AF8008074A0 /* BlurViewShow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB575C0B211C3AF8008074A0 /* BlurViewShow.xib */; };
+		EB575C0E211C3B12008074A0 /* BlurViewShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB575C0D211C3B12008074A0 /* BlurViewShow.swift */; };
 		EB7393FE211A27D9001EEB84 /* SliderSubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7393FD211A27D9001EEB84 /* SliderSubView.xib */; };
 		EB739400211A27EF001EEB84 /* SliderSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7393FF211A27EF001EEB84 /* SliderSubView.swift */; };
 		EBA067A8211A8B8B00DECEC7 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA067A7211A8B8B00DECEC7 /* Variables.swift */; };
@@ -99,6 +101,8 @@
 		EB450D19211A10F6004C1861 /* Linotte Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Linotte Light.otf"; sourceTree = "<group>"; };
 		EB450D1A211A10F6004C1861 /* Linotte Semi Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Linotte Semi Bold.otf"; sourceTree = "<group>"; };
 		EB450D1B211A10F6004C1861 /* Linotte Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Linotte Regular.otf"; sourceTree = "<group>"; };
+		EB575C0B211C3AF8008074A0 /* BlurViewShow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlurViewShow.xib; sourceTree = "<group>"; };
+		EB575C0D211C3B12008074A0 /* BlurViewShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurViewShow.swift; sourceTree = "<group>"; };
 		EB7393FD211A27D9001EEB84 /* SliderSubView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderSubView.xib; sourceTree = "<group>"; };
 		EB7393FF211A27EF001EEB84 /* SliderSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSubView.swift; sourceTree = "<group>"; };
 		EBA067A7211A8B8B00DECEC7 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
@@ -295,6 +299,8 @@
 				EB7393FF211A27EF001EEB84 /* SliderSubView.swift */,
 				EBA067AF211AA32500DECEC7 /* NavigationCustomViewController.swift */,
 				EBA067B0211AA32500DECEC7 /* NavigationCustomViewController.xib */,
+				EB575C0B211C3AF8008074A0 /* BlurViewShow.xib */,
+				EB575C0D211C3B12008074A0 /* BlurViewShow.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -421,6 +427,7 @@
 				EB3779202117E88500A339EE /* img3.jpeg in Resources */,
 				EBA067AA211A8C4200DECEC7 /* bg_green.png in Resources */,
 				EB1F1CC92116F85F0004659B /* ic_twitter_35.png in Resources */,
+				EB575C0C211C3AF8008074A0 /* BlurViewShow.xib in Resources */,
 				EBA067B2211AA32500DECEC7 /* NavigationCustomViewController.xib in Resources */,
 				EB1F1CCC2116F85F0004659B /* ic_google_35.png in Resources */,
 				EB1F1C992116F6020004659B /* LaunchScreen.storyboard in Resources */,
@@ -472,6 +479,7 @@
 				EB0822F8211B5AF400587C86 /* MyTableViewCell.swift in Sources */,
 				EB441353211717CF0011ABF3 /* AppUtility.swift in Sources */,
 				EB1F1C8E2116F5F90004659B /* ViewController.swift in Sources */,
+				EB575C0E211C3B12008074A0 /* BlurViewShow.swift in Sources */,
 				EB1F1C8C2116F5F90004659B /* AppDelegate.swift in Sources */,
 				EB739400211A27EF001EEB84 /* SliderSubView.swift in Sources */,
 				EB4413582117292B0011ABF3 /* cellTableView.swift in Sources */,

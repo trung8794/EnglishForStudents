@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="MyTableView" destination="Vu6-yy-8cT" id="S86-hC-vzX"/>
                 <outlet property="bg_image" destination="M5g-R9-njf" id="6Jb-Di-cH4"/>
+                <outlet property="myBlurView" destination="fx6-pF-IhL" id="zS1-1H-VDE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -47,6 +48,14 @@
                         <constraint firstItem="M5I-7d-80P" firstAttribute="centerY" secondItem="Xxu-Lz-6I0" secondAttribute="centerY" id="vie-rs-uOa"/>
                     </constraints>
                 </view>
+                <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fx6-pF-IhL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="P7X-E7-Kex">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -54,8 +63,12 @@
                 <constraint firstItem="Xxu-Lz-6I0" firstAttribute="top" secondItem="Vu6-yy-8cT" secondAttribute="bottom" id="BRu-eT-65C"/>
                 <constraint firstAttribute="trailing" secondItem="Vu6-yy-8cT" secondAttribute="trailing" constant="10" id="DRb-jh-j3K"/>
                 <constraint firstItem="Xxu-Lz-6I0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="P9X-5A-ye3"/>
+                <constraint firstItem="fx6-pF-IhL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Pm9-CX-GSw"/>
+                <constraint firstItem="fx6-pF-IhL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XQM-Nk-FGZ"/>
+                <constraint firstAttribute="trailing" secondItem="fx6-pF-IhL" secondAttribute="trailing" id="bHp-eY-ezl"/>
                 <constraint firstItem="Vu6-yy-8cT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="g58-ky-GWZ"/>
                 <constraint firstItem="Vu6-yy-8cT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="upV-cX-nmD"/>
+                <constraint firstAttribute="bottom" secondItem="fx6-pF-IhL" secondAttribute="bottom" id="yTC-03-Bw6"/>
             </constraints>
             <point key="canvasLocation" x="32.5" y="65.5"/>
         </view>
