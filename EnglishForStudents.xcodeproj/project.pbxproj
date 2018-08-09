@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB0822F8211B5AF400587C86 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0822F6211B5AF400587C86 /* MyTableViewCell.swift */; };
+		EB0822F9211B5AF400587C86 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0822F7211B5AF400587C86 /* MyTableViewCell.xib */; };
 		EB1F1C8C2116F5F90004659B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F1C8B2116F5F90004659B /* AppDelegate.swift */; };
 		EB1F1C8E2116F5F90004659B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F1C8D2116F5F90004659B /* ViewController.swift */; };
 		EB1F1C912116F5F90004659B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1F1C8F2116F5F90004659B /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 		EBA067AE211A932B00DECEC7 /* ShowUnitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA067AC211A932B00DECEC7 /* ShowUnitsViewController.xib */; };
 		EBA067B1211AA32500DECEC7 /* NavigationCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA067AF211AA32500DECEC7 /* NavigationCustomViewController.swift */; };
 		EBA067B2211AA32500DECEC7 /* NavigationCustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA067B0211AA32500DECEC7 /* NavigationCustomViewController.xib */; };
+		EBC922AE211BE986007DA901 /* ic_right1.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC922AD211BE986007DA901 /* ic_right1.png */; };
+		EBC922B0211BF1E5007DA901 /* ic_right_2.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC922AF211BF1E5007DA901 /* ic_right_2.png */; };
 		EBC95D9C211AD9A700AECE23 /* ic_girl.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC95D9A211AD9A700AECE23 /* ic_girl.png */; };
 		EBC95D9D211AD9A700AECE23 /* ic_boy.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC95D9B211AD9A700AECE23 /* ic_boy.png */; };
 /* End PBXBuildFile section */
@@ -61,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB0822F6211B5AF400587C86 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		EB0822F7211B5AF400587C86 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		EB1F1C882116F5F90004659B /* EnglishForStudents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishForStudents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1F1C8B2116F5F90004659B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB1F1C8D2116F5F90004659B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +107,8 @@
 		EBA067AC211A932B00DECEC7 /* ShowUnitsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowUnitsViewController.xib; sourceTree = "<group>"; };
 		EBA067AF211AA32500DECEC7 /* NavigationCustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCustomViewController.swift; sourceTree = "<group>"; };
 		EBA067B0211AA32500DECEC7 /* NavigationCustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationCustomViewController.xib; sourceTree = "<group>"; };
+		EBC922AD211BE986007DA901 /* ic_right1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_right1.png; sourceTree = "<group>"; };
+		EBC922AF211BF1E5007DA901 /* ic_right_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_right_2.png; sourceTree = "<group>"; };
 		EBC95D9A211AD9A700AECE23 /* ic_girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_girl.png; sourceTree = "<group>"; };
 		EBC95D9B211AD9A700AECE23 /* ic_boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_boy.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +138,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB0822EB211B55D400587C86 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				EB0822F6211B5AF400587C86 /* MyTableViewCell.swift */,
+				EB0822F7211B5AF400587C86 /* MyTableViewCell.xib */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
 		EB1F1C7F2116F5F90004659B = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +216,7 @@
 		EB1F1CBE2116F7B50004659B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EB0822EB211B55D400587C86 /* Elements */,
 				EBA067AB211A932B00DECEC7 /* ShowUnitsViewController.swift */,
 				EB1F1C8D2116F5F90004659B /* ViewController.swift */,
 				EB44135421171A360011ABF3 /* NextLoginViewController.swift */,
@@ -235,6 +253,8 @@
 		EB1F1CC22116F8230004659B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EBC922AF211BF1E5007DA901 /* ic_right_2.png */,
+				EBC922AD211BE986007DA901 /* ic_right1.png */,
 				EBC95D9B211AD9A700AECE23 /* ic_boy.png */,
 				EBC95D9A211AD9A700AECE23 /* ic_girl.png */,
 				EBA067A9211A8C4200DECEC7 /* bg_green.png */,
@@ -408,6 +428,7 @@
 				EB1F1CCA2116F85F0004659B /* ic_menu.png in Resources */,
 				EB1F1CCB2116F85F0004659B /* ic_fb_35.png in Resources */,
 				EB1F1C962116F6020004659B /* Assets.xcassets in Resources */,
+				EBC922AE211BE986007DA901 /* ic_right1.png in Resources */,
 				EB7393FE211A27D9001EEB84 /* SliderSubView.xib in Resources */,
 				EB44135C211748280011ABF3 /* ic_menu2.png in Resources */,
 				EB1F1C912116F5F90004659B /* Main.storyboard in Resources */,
@@ -415,7 +436,9 @@
 				EB1F1CC82116F85F0004659B /* bg_yellow.png in Resources */,
 				EBC95D9D211AD9A700AECE23 /* ic_boy.png in Resources */,
 				EB450D1D211A1140004C1861 /* Linotte Regular.otf in Resources */,
+				EB0822F9211B5AF400587C86 /* MyTableViewCell.xib in Resources */,
 				EBA067AE211A932B00DECEC7 /* ShowUnitsViewController.xib in Resources */,
+				EBC922B0211BF1E5007DA901 /* ic_right_2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +469,7 @@
 				EB441350211706710011ABF3 /* CustomUIView.swift in Sources */,
 				EBA067AD211A932B00DECEC7 /* ShowUnitsViewController.swift in Sources */,
 				EBA067A8211A8B8B00DECEC7 /* Variables.swift in Sources */,
+				EB0822F8211B5AF400587C86 /* MyTableViewCell.swift in Sources */,
 				EB441353211717CF0011ABF3 /* AppUtility.swift in Sources */,
 				EB1F1C8E2116F5F90004659B /* ViewController.swift in Sources */,
 				EB1F1C8C2116F5F90004659B /* AppDelegate.swift in Sources */,

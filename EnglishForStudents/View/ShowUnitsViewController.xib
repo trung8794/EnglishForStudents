@@ -8,16 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Linotte Regular.otf">
-            <string>Linotte-Regular</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowUnitsViewController" customModule="EnglishForStudents" customModuleProvider="target">
             <connections>
+                <outlet property="MyTableView" destination="Vu6-yy-8cT" id="S86-hC-vzX"/>
                 <outlet property="bg_image" destination="M5g-R9-njf" id="6Jb-Di-cH4"/>
-                <outlet property="lblNumber" destination="Atn-u5-tmn" id="SM6-pi-JKN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,25 +21,43 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="M5g-R9-njf">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_yellow.png" translatesAutoresizingMaskIntoConstraints="NO" id="M5g-R9-njf">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atn-u5-tmn">
-                    <rect key="frame" x="140" y="325" width="94" height="17"/>
-                    <fontDescription key="fontDescription" name="Linotte-Regular" family="Linotte-Regular" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vu6-yy-8cT">
+                    <rect key="frame" x="10" y="70" width="355" height="550"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xxu-Lz-6I0">
+                    <rect key="frame" x="37" y="620" width="301" height="42"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ads Google AdMod" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5I-7d-80P">
+                            <rect key="frame" x="76.5" y="11" width="148" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="301" id="9EF-lm-1uD"/>
+                        <constraint firstItem="M5I-7d-80P" firstAttribute="centerX" secondItem="Xxu-Lz-6I0" secondAttribute="centerX" id="JXX-gD-BnA"/>
+                        <constraint firstAttribute="height" constant="42" id="Km6-JP-YnS"/>
+                        <constraint firstItem="M5I-7d-80P" firstAttribute="centerY" secondItem="Xxu-Lz-6I0" secondAttribute="centerY" id="vie-rs-uOa"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="M5g-R9-njf" secondAttribute="bottom" id="an3-FT-wvY"/>
-                <constraint firstItem="Atn-u5-tmn" firstAttribute="centerY" secondItem="M5g-R9-njf" secondAttribute="centerY" id="f5k-Oq-iSr"/>
-                <constraint firstAttribute="trailing" secondItem="M5g-R9-njf" secondAttribute="trailing" id="kHQ-4U-EeZ"/>
-                <constraint firstItem="M5g-R9-njf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pS1-oh-hza"/>
-                <constraint firstItem="M5g-R9-njf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="x5o-Gr-GMM"/>
-                <constraint firstItem="Atn-u5-tmn" firstAttribute="centerX" secondItem="M5g-R9-njf" secondAttribute="centerX" id="zk8-cI-XOQ"/>
+                <constraint firstAttribute="bottom" secondItem="Xxu-Lz-6I0" secondAttribute="bottom" constant="5" id="5qz-yz-h80"/>
+                <constraint firstItem="Xxu-Lz-6I0" firstAttribute="top" secondItem="Vu6-yy-8cT" secondAttribute="bottom" id="BRu-eT-65C"/>
+                <constraint firstAttribute="trailing" secondItem="Vu6-yy-8cT" secondAttribute="trailing" constant="10" id="DRb-jh-j3K"/>
+                <constraint firstItem="Xxu-Lz-6I0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="P9X-5A-ye3"/>
+                <constraint firstItem="Vu6-yy-8cT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="g58-ky-GWZ"/>
+                <constraint firstItem="Vu6-yy-8cT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="upV-cX-nmD"/>
             </constraints>
+            <point key="canvasLocation" x="32.5" y="65.5"/>
         </view>
     </objects>
     <resources>

@@ -77,7 +77,7 @@ class NavigationCustomViewController: UIViewController {
         btnUser.layer.cornerRadius = 20
         btnUser.clipsToBounds = true
         
-        btnTopbarShowText.setTitle("Nguyen Van Trung", for: .normal)
+        btnTopbarShowText.setTitle("", for: .normal)
         btnTopbarShowText.titleLabel?.font = FONT_TEXT_20
         btnTopbarShowText.titleLabel?.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         btnTopbarShowText.titleLabel?.textAlignment = .right

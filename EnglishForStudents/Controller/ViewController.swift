@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     @IBAction func loginAction(_ sender: Any) {
         let myVal = storyboard?.instantiateViewController(withIdentifier: "NextLogin") as! UIViewController
-        present(myVal, animated: true, completion: nil)
+        present(myVal, animated: false, completion: nil)
     }
     
     // MARK: - Function common

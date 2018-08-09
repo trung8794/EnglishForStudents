@@ -58,8 +58,9 @@ class NextLoginViewController: NavigationCustomViewController, UIScrollViewDeleg
     // MARK: - Action
     @IBAction func goUnitsAction(_ sender: UIButton) {
         let myShowUnitsView = ShowUnitsViewController(nibName: "ShowUnitsViewController", bundle: nil)
-        myShowUnitsView.gradeNumber = String(gradeNumber)
-        present(myShowUnitsView, animated: true, completion: nil)
+        myShowUnitsView.gradeNumber = gradeNumber
+        present(myShowUnitsView, animated: false, completion: nil)
+//        self.show(myShowUnitsView, sender: nil)
     }
 
     // MARK: - Function common
@@ -67,6 +68,8 @@ class NextLoginViewController: NavigationCustomViewController, UIScrollViewDeleg
     func initViews() {
         btnGo.customBorderRadius(rad: 5.0)
         btnGo.customBorderColor(color: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
+        btnTopbarShowText.setTitle("Nguyen Van Trung", for: .normal)
+        
     }
     
     func createSliderFeature() {
