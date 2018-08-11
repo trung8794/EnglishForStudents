@@ -24,21 +24,21 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="300" height="380"/>
+            <rect key="frame" x="0.0" y="0.0" width="385" height="464"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-8D-g4u">
-                    <rect key="frame" x="0.0" y="126.5" width="150" height="126.5"/>
+                    <rect key="frame" x="0.0" y="154.5" width="192.5" height="155.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Net-8s-U55">
-                            <rect key="frame" x="37" y="25" width="76.5" height="76.5"/>
+                            <rect key="frame" x="44" y="25" width="105" height="105.5"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="Net-8s-U55" secondAttribute="height" multiplier="1:1" id="rNp-bk-WUs"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phonetic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVZ-iC-by4">
-                            <rect key="frame" x="37.5" y="102.5" width="76.5" height="20"/>
+                            <rect key="frame" x="58.5" y="131.5" width="76.5" height="20"/>
                             <fontDescription key="fontDescription" name="Linotte-SemiBold" family="Linotte-SemiBold" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -56,17 +56,17 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMJ-nF-I4Z">
-                    <rect key="frame" x="150" y="0.0" width="150" height="126.5"/>
+                    <rect key="frame" x="192.5" y="0.0" width="192.5" height="154.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EK9-HR-uDU">
-                            <rect key="frame" x="37" y="25" width="76.5" height="76.5"/>
+                            <rect key="frame" x="44" y="25" width="105" height="104.5"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="EK9-HR-uDU" secondAttribute="height" multiplier="1:1" id="JGf-E7-NL6"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grammar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkh-bq-eKi">
-                            <rect key="frame" x="33" y="102.5" width="85" height="20"/>
+                            <rect key="frame" x="54" y="130.5" width="85" height="20"/>
                             <fontDescription key="fontDescription" name="Linotte-SemiBold" family="Linotte-SemiBold" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -84,17 +84,17 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fza-co-2R9">
-                    <rect key="frame" x="0.0" y="0.0" width="150" height="126.5"/>
+                    <rect key="frame" x="0.0" y="0.0" width="192.5" height="154.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAf-Lr-qeV">
-                            <rect key="frame" x="37" y="25" width="76.5" height="76.5"/>
+                            <rect key="frame" x="44" y="25" width="105" height="104.5"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="IAf-Lr-qeV" secondAttribute="height" id="rPV-XE-nXl"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vocabulary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idy-DT-Y0J">
-                            <rect key="frame" x="25" y="102.5" width="101" height="20"/>
+                            <rect key="frame" x="46" y="130.5" width="101" height="20"/>
                             <fontDescription key="fontDescription" name="Linotte-SemiBold" family="Linotte-SemiBold" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -112,17 +112,17 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6O-Kl-5g1">
-                    <rect key="frame" x="0.0" y="253" width="150" height="126.5"/>
+                    <rect key="frame" x="0.0" y="310" width="192.5" height="154.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLt-Ef-2v3">
-                            <rect key="frame" x="37" y="25" width="76.5" height="76.5"/>
+                            <rect key="frame" x="44" y="25" width="105" height="104.5"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="yLt-Ef-2v3" secondAttribute="height" multiplier="1:1" id="KFa-Cg-HVE"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Practice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IY1-5C-enq">
-                            <rect key="frame" x="40" y="102.5" width="71" height="20"/>
+                            <rect key="frame" x="61" y="130.5" width="71" height="20"/>
                             <fontDescription key="fontDescription" name="Linotte-SemiBold" family="Linotte-SemiBold" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -140,17 +140,17 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uas-Vc-TV3">
-                    <rect key="frame" x="150" y="126.5" width="150" height="126.5"/>
+                    <rect key="frame" x="192.5" y="154.5" width="192.5" height="155.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4T-Cf-I5v">
-                            <rect key="frame" x="37" y="25" width="76.5" height="76.5"/>
+                            <rect key="frame" x="44" y="25" width="105" height="105.5"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="f4T-Cf-I5v" secondAttribute="height" multiplier="1:1" id="1ck-Wk-Aii"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listening" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVD-oR-rln">
-                            <rect key="frame" x="35.5" y="102.5" width="80.5" height="20"/>
+                            <rect key="frame" x="56.5" y="131.5" width="80.5" height="20"/>
                             <fontDescription key="fontDescription" name="Linotte-SemiBold" family="Linotte-SemiBold" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -168,17 +168,17 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKc-zM-zKX">
-                    <rect key="frame" x="150" y="253" width="150" height="126.5"/>
+                    <rect key="frame" x="192.5" y="310" width="192.5" height="154.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeC-2k-IuK">
-                            <rect key="frame" x="37" y="25" width="76.5" height="76.5"/>
+                            <rect key="frame" x="44" y="25" width="105" height="104.5"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="eeC-2k-IuK" secondAttribute="height" multiplier="1:1" id="QJd-a7-i9O"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Further Practice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wE6-ak-hqS">
-                            <rect key="frame" x="5.5" y="102.5" width="140.5" height="20"/>
+                            <rect key="frame" x="26.5" y="130.5" width="140.5" height="20"/>
                             <fontDescription key="fontDescription" name="Linotte-SemiBold" family="Linotte-SemiBold" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -225,7 +225,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="e77-EF-Qnp"/>
-            <point key="canvasLocation" x="50" y="197"/>
+            <point key="canvasLocation" x="92.5" y="155"/>
         </view>
     </objects>
 </document>
